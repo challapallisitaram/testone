@@ -4,7 +4,7 @@
     stages {
         stage('Build') {
             steps {
-                bat 'set'
+                npm install
             }
         }
     }
