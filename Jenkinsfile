@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building..',
+				npm install
             }
         }
         stage('Test') {
@@ -14,7 +15,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying....',
+				npm start
             }
         }
     }
